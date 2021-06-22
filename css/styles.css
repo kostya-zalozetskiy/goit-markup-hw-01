@@ -1,0 +1,59 @@
+:root {
+--main-font:"Roboto", sans-serif;
+--first-color:#212121;
+--second-color:#757575;
+--accent:#2196F3;
+}
+
+body {
+    font-family: var( --main-font);
+    color: var(--second-color);
+}
+.link{
+    text-decoration: none;
+}
+.list{
+    
+}
+.logo{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+.web{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent);
+}
+.menu .menu-list {  
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--first-color);
+}
+.menu-list:hover,
+.menu-list:focus{
+    color: var(--accent);
+}
+.menu .menu-list.current{
+    color: var(--accent);
+}
+.feedback{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--second-color)
+}
+.feedback:hover,
+.feedback:focus{
+    color: var(--accent);
+}
