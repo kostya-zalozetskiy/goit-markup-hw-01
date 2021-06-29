@@ -114,7 +114,6 @@ img{
 /*=============================HERO============================*/
 .hero{
     background-color: #2F303A;
-    width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     margin: 0 auto;
@@ -271,8 +270,8 @@ border-radius: 0px 0px 4px 4px;
 /*feedback-footer*/
 .feedback-footer{
     font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 16px;
+    line-height: 1.62;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 
