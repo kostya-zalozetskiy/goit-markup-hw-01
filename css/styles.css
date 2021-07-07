@@ -8,7 +8,9 @@
 body {
     font-family: var( --main-font);
     color: var(--second-color);
+    box-sizing: border-box;
 }
+
 h1,h2,h3,h4,h5,h6,p{
  margin-top: 0;
  margin-bottom: 0;
@@ -229,6 +231,7 @@ img{
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
+    background-color: #FFFFFF;
     /*padding-bottom: 94px;*/
 }
 /*head-section*/
@@ -360,7 +363,7 @@ border-radius: 0px 0px 4px 4px;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2F303A;
-    height: 252px;
+
     margin-left: auto;
     margin-right: auto;
 }
@@ -433,7 +436,6 @@ border-radius: 0px 0px 4px 4px;
 .list-links-join{
     display: flex;
     margin-top: 20px;
-    margin-bottom: 100px;
     
 }
 .social-list-join:not(:first-child){
