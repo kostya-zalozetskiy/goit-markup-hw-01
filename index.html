@@ -50,8 +50,6 @@
                     </svg>
                 +38 096 111 11 11</a>
             </li>
-            
-        
         </ul>
         
         </div>
@@ -60,7 +58,7 @@
         <!-- HERO-->
         <section class="hero">
             <h1 class="main-head">Эффективные решения для вашего бизнеса</h1>
-            <button class="btn-hero" type="button">Заказать услугу</button>
+            <button data-modal-open class="btn-hero" type="button">Заказать услугу</button>
         </section>
         <!--advantages-->
         <section class="size" >
@@ -120,13 +118,18 @@
                 <h2 class="head-section">Чем мы занимаемся</h2>
                 <ul class="list change-img">
                 <li class="works">
-                    <img src="./images/work/sitelayout-1.jpg" alt="Верстка сайта" width="370" height="294"> 
+                        <img src="./images/work/sitelayout-1.jpg" alt="Верстка сайта" width="370" height="294">
+                        <p class="kind-work">Десктопные приложения</p>               
                 </li>
+               
                 <li class="works">
                     <img src="./images/work/sitelayout-2.jpg" alt="Дизайн мобильного ПО" width="370" height="294">
+                    <p class="kind-work">Мобильные приложения</p>
                 </li>
+                
                 <li class="works">
                     <img src="./images/work/sitelayout-3.jpg" alt="Выбор цвета страницы на планшете" width="370" height="294">
+                    <p class="kind-work">Дизайнерские решения</p>
                 </li>
                 </ul>
             </div>  
@@ -461,5 +464,17 @@
            
         </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+            <button data-modal-close class="close-btn" type="button">
+                <svg  height="18" width="18">
+                    <use
+                        href="./images/sprite.svg#icon-close">
+                    </use>
+                </svg> 
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

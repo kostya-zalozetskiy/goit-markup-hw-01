@@ -3,6 +3,8 @@
 --first-color:#212121;
 --second-color:#757575;
 --accent:#2196F3;
+--time:250ms;
+--cubic:cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 body {
@@ -85,8 +87,11 @@ img{
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--first-color);
+    transition: color var(--time) var(--cubic);
 }
-
+.reference{
+    position: relative;
+}
 .reference:not(:last-child) {
     margin-right: 50px;
 }
@@ -94,6 +99,20 @@ img{
 .menu-list:hover,
 .menu-list:focus{
     color: var(--accent);
+}
+.current::after{
+ position: absolute;
+    left: 0;
+    bottom: 0; 
+    
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent);
+    border-radius: 2px;
+    transform: translateY(31px);
+    transition: color var(--time) var(--cubic);
 }
 .menu .menu-list.current{
     color: var(--accent);
@@ -106,17 +125,18 @@ img{
 
 .feedback{
     display: flex;
-
-    
+   
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--second-color)
+    color: var(--second-color);
+    transition: color var(--time) var(--cubic);
 }
 .icon{
     margin-right: 10px;
     fill: currentColor;
+    transition: fill var(--time) var(--cubic);
 }
 .icon:hover,
 .icon:focus{
@@ -163,6 +183,7 @@ img{
     border-radius: 4px;
     border-color: #188CE8;
     padding: 10px 32px;
+    transition: color var(--time) var(--cubic);
    
     font-weight: 700;
     font-size: 16px;
@@ -172,6 +193,7 @@ img{
     letter-spacing: 0.06em;
     color: #FFFFFF;
     background-color: var(--accent);
+    transition: background-color var(--time) var(--cubic);
 }
 .btn-hero:hover,
 .btn-hero:focus{
@@ -249,13 +271,33 @@ img{
 
 }
 .works{
+    position: relative;
     flex-basis: calc((100% - 90px) / 3) ;
     margin-left: 30px;
 }
 .size{
     padding-bottom: 94px;
     padding-top: 94px;
+}
 
+.kind-work{
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    padding: 27px 0px;
+    background: rgba(47, 48, 58, 0.8);
+
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 /*team*/
 .team{
@@ -307,6 +349,7 @@ img{
     align-items: center;
     background-color: #FFFFFF;
     fill: #AFB1B8;
+    transition: background-color var(--time) var(--cubic), fill var(--time) var(--cubic);
 
 }
 .social-icon{
@@ -351,6 +394,7 @@ border-radius: 0px 0px 4px 4px;
     border-style: solid;
     border-color: #AFB1B8;
     fill: #AFB1B8;
+    transition: fill var(--time) var(--cubic), border-color var(--time) var(--cubic); 
 }
 .link-company:focus,
 .link-company:hover{
@@ -382,6 +426,7 @@ border-radius: 0px 0px 4px 4px;
     line-height: 1.62;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    transition: color var(--time) var(--cubic);
 
 }
 .feedback-footer:hover,
@@ -396,6 +441,7 @@ border-radius: 0px 0px 4px 4px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    transition: color var(--time) var(--cubic);
 }    
 /*location*/
 .location:hover
@@ -449,6 +495,7 @@ border-radius: 0px 0px 4px 4px;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.1);
     fill: #FFFFFF;
+    transition: background-color var(--time) var(--cubic), fill var(--time) var(--cubic);
 }
 
 .social-links-join:focus,
@@ -456,6 +503,52 @@ border-radius: 0px 0px 4px 4px;
     background-color: var(--accent);
     fill: #FFFFFF;
 }
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal{
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    height: 581px;
+    width: 528px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    transform: translate(-50%, -50%);
+    } 
+
+.close-btn{
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+     height: 30px;
+     width: 30px;
+     top: 8px;
+     right: 8px;
+     cursor: pointer;
+        
+     background-color: transparent;
+     border: 1px solid rgba(0, 0, 0, 0.1);
+     box-sizing: border-box;
+      padding: 0;
+    }
+.is-hidden{
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+  }
 /*-----------------------------------------------PORTFOLIO---------------------------------------*/
 .btn-portfolio{
     display: flex;
@@ -493,6 +586,7 @@ border-radius: 0px 0px 4px 4px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--first-color);
+    transition: color var(--time) var(--cubic), background-color var(--time) var(--cubic), border-color var(--time) var(--cubic), box-shadow var(--time) var(--cubic);
 }
 .filter-btn:hover,
 .filter-btn:focus{
@@ -518,7 +612,9 @@ border-radius: 0px 0px 4px 4px;
 .list-works{
     margin-left: 30px;
     margin-top: 30px;
-    flex-basis: calc((100% - 96px) / 3) 
+    flex-basis: calc((100% - 96px) / 3);
+    transition: background-color var(--time) var(--cubic), box-shadow var(--time) var(--cubic);
+
 }
 .list-works:hover,
 .list-works:focus{
@@ -556,4 +652,47 @@ border-radius: 0px 0px 4px 4px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--second-color);
+    
 }
+
+.link-example{
+    display: block;
+}
+.layer{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+
+.overlay{
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+   
+    padding: 63px 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+    color: #FFFFFF;
+    
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    
+
+   overflow: auto;
+   
+    transform: translateY(100%);
+ 
+    transition: transform  var(--time) var(--cubic);
+}
+.link-example:hover .overlay,
+.link-example:focus .overlay{
+    transform: translateY(0%);
+}
+
+
