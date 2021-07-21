@@ -280,6 +280,7 @@ img{
     padding-bottom: 94px;
     padding-top: 94px;
 }
+<<<<<<< HEAD
 
 .kind-work{
     position: absolute;
@@ -291,6 +292,19 @@ img{
     padding: 27px 0px;
     background: rgba(47, 48, 58, 0.8);
 
+=======
+
+.kind-work{
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    padding: 27px 0px;
+    background: rgba(47, 48, 58, 0.8);
+
+>>>>>>> d496f97799ab5b1001fa6bad14c1a0fe24cbfff0
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 14px;
@@ -504,6 +518,7 @@ border-radius: 0px 0px 4px 4px;
     background-color: var(--accent);
     fill: #FFFFFF;
 }
+<<<<<<< HEAD
 /* form-footer */
 .footer-form{
     /* display: flex; */
@@ -565,6 +580,8 @@ border-radius: 0px 0px 4px 4px;
     margin-left: 10px;
 
 }
+=======
+>>>>>>> d496f97799ab5b1001fa6bad14c1a0fe24cbfff0
 .backdrop{
     position: fixed;
     top: 0;
@@ -577,17 +594,26 @@ border-radius: 0px 0px 4px 4px;
     pointer-events: auto;
     transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+<<<<<<< HEAD
 /* ======================================Modal========================== */
 .modal{
     position: absolute;
     box-sizing: border-box;
+=======
+.modal{
+    position: absolute;
+    
+>>>>>>> d496f97799ab5b1001fa6bad14c1a0fe24cbfff0
     top: 50%;
     left: 50%;
     height: 581px;
     width: 528px;
     border-radius: 4px;
     background-color: #FFFFFF;
+<<<<<<< HEAD
     padding: 40px 40px;
+=======
+>>>>>>> d496f97799ab5b1001fa6bad14c1a0fe24cbfff0
     transform: translate(-50%, -50%);
     } 
 
@@ -607,17 +633,21 @@ border-radius: 0px 0px 4px 4px;
      border: 1px solid rgba(0, 0, 0, 0.1);
      box-sizing: border-box;
       padding: 0;
+<<<<<<< HEAD
       transition: fill var(--time) var(--cubic);
     }
     .close-btn:focus,
     .close-btn:hover{
         fill: var(--accent);
+=======
+>>>>>>> d496f97799ab5b1001fa6bad14c1a0fe24cbfff0
     }
 .is-hidden{
       opacity: 0;
       visibility: hidden;
       pointer-events: none;
   }
+<<<<<<< HEAD
   
   .modal-form{
       display: flex;
@@ -743,6 +773,8 @@ border-radius: 0px 0px 4px 4px;
       margin-bottom: 40px;
       border: none;
   }
+=======
+>>>>>>> d496f97799ab5b1001fa6bad14c1a0fe24cbfff0
 /*-----------------------------------------------PORTFOLIO---------------------------------------*/
 .btn-portfolio{
     display: flex;
