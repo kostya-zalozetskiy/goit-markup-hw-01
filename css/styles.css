@@ -698,7 +698,7 @@ border-radius: 0px 0px 4px 4px;
     
     .modal-form-checkbox:checked + .modal-form-checkbox-label::before {
         background-color: var(--accent);
-        background-image: url('/images/icon/check.svg');
+        background-image: url('./images/icon/check.svg');
         background-origin: border-box;
         border-color: var(--accent);
         background-size: contain;
