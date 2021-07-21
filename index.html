@@ -10,7 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" 
         rel="stylesheet">    
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/1.1.0/normalize.min.css" integrity="sha512-l0ofWk9slhBYzFo/8jFXBHNcPIZ4CekhhC4mtj9EZ47ed+Gdt4txfOF2+VAH/YdxFFf1ODtTuaGXZR6ygHsa7w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!--header-->
@@ -50,8 +50,6 @@
                     </svg>
                 +38 096 111 11 11</a>
             </li>
-            
-        
         </ul>
         
         </div>
@@ -60,7 +58,7 @@
         <!-- HERO-->
         <section class="hero">
             <h1 class="main-head">Эффективные решения для вашего бизнеса</h1>
-            <button class="btn-hero" type="button">Заказать услугу</button>
+            <button data-modal-open class="btn-hero" type="button">Заказать услугу</button>
         </section>
         <!--advantages-->
         <section class="size" >
@@ -120,13 +118,18 @@
                 <h2 class="head-section">Чем мы занимаемся</h2>
                 <ul class="list change-img">
                 <li class="works">
-                    <img src="./images/work/sitelayout-1.jpg" alt="Верстка сайта" width="370" height="294"> 
+                        <img src="./images/work/sitelayout-1.jpg" alt="Верстка сайта" width="370" height="294">
+                        <p class="kind-work">Десктопные приложения</p>               
                 </li>
+               
                 <li class="works">
                     <img src="./images/work/sitelayout-2.jpg" alt="Дизайн мобильного ПО" width="370" height="294">
+                    <p class="kind-work">Мобильные приложения</p>
                 </li>
+                
                 <li class="works">
                     <img src="./images/work/sitelayout-3.jpg" alt="Выбор цвета страницы на планшете" width="370" height="294">
+                    <p class="kind-work">Дизайнерские решения</p>
                 </li>
                 </ul>
             </div>  
@@ -458,8 +461,81 @@
                     </li>
                 </ul>
             </div>
-           
+            
+            <form action="#" class="footer-form">
+                <p class="join">Подпишитесь на рассылку</p>
+                <input type="email" name="mailing" class="footer-input" placeholder="E-mail" required>
+                <button class="btn-hero" type="submit">Подписаться
+                    <svg class="icon-form-footer" width="24" height="24">
+                        <use
+                            href="./images/sprite.svg#icon-telegram">
+                        </use>
+                    </svg>
+                </button>
+            </form>
         </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+            <button data-modal-close class="close-btn" type="button">
+                <svg  height="18" width="18">
+                    <use
+                        href="./images/sprite.svg#icon-close">
+                    </use>
+                </svg> 
+            </button>   
+            <form action="#" class="modal-form">
+                <p class="modal-form-head"> Оставьте свои данные, мы вам перезвоним</p>
+                
+                <label class="modal-form-field">
+                     Имя
+                    <span class="modal-form-input-wrapper">
+                        <input type="text" class="modal-form-input" name="user-name" minlength="2" required>
+                        <svg class="modal-form-icon" height="18" width="18">
+                            <use
+                                href="./images/sprite.svg#icon-person">
+                            </use>
+                        </svg>
+                    </span>                     
+                </label>
+                
+                <label class="modal-form-field">
+                    Телефон
+                   
+                   <span class="modal-form-input-wrapper">
+                        <input type="tel" class="modal-form-input" name="user-tel" required>
+                        <svg class="modal-form-icon" height="18" width="18">
+                            <use
+                                href="./images/sprite.svg#icon-phone">
+                            </use>
+                        </svg>
+                   </span> 
+               </label>
+               
+                <label class="modal-form-field">
+                    Почта
+                    <span class="modal-form-input-wrapper">
+                        <input type="email" class="modal-form-input" name="user-email" required>
+                        <svg class="modal-form-icon" height="18" width="18">
+                            <use
+                                href="./images/sprite.svg#icon-email">
+                            </use>
+                        </svg>
+                    </span>
+               
+                </label>
+                <label class="modal-form-field">
+                    Коментарий
+                    <textarea name="user-message" placeholder="Введите текст" class="coments"></textarea>
+                </label>            
+                <input type="checkbox" class="modal-form-checkbox visually-hidden" id="accept-policy">
+            
+                <label for="accept-policy" class="modal-form-checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp<a href="#" class="modal-form-label-link">Условия договора</a></label>
+                <button type="submit" class="btn-hero">Отправить</button>
+            </form>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
