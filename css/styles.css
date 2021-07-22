@@ -740,6 +740,9 @@ border-radius: 0px 0px 4px 4px;
       margin-top: 34px;
       margin-bottom: 40px;
       border: none;
+      display: inline-block;
+      height: 50px;
+      width: 200px;
   }
 /*-----------------------------------------------PORTFOLIO---------------------------------------*/
 .btn-portfolio{
