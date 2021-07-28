@@ -10,29 +10,29 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" 
         rel="stylesheet">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/1.1.0/normalize.min.css" integrity="sha512-l0ofWk9slhBYzFo/8jFXBHNcPIZ4CekhhC4mtj9EZ47ed+Gdt4txfOF2+VAH/YdxFFf1ODtTuaGXZR6ygHsa7w==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
     <!--header-->
     <header class="header">
         <div class="container header-container">
         <nav class="navigation">
-          <p><a class="logo link" href="./index.html"><span class="web">Web</span>Studio</a> </p> 
+          <p><a class="logo logo_marginr link" href="./index.html"><span class="logo__web">Web</span>Studio</a> </p> 
           <ul class="menu list">
-               <li class="reference"> 
-                   <a href ="./index.html"class="menu-list link list ">Студия</a>
+               <li class="menu__reference"> 
+                   <a href ="./index.html"class="menu__link link list ">Студия</a>
                </li>
-               <li class="reference">
-                   <a class="menu-list link list current" href="./portfolio.html">Портфолио</a>
+               <li class="menu__reference">
+                   <a class="menu__link link list current" href="./portfolio.html">Портфолио</a>
                </li >
-               <li class="reference">
-                   <a class="menu-list link list" href="">Контакты</a>
+               <li class="menu__reference">
+                   <a class="menu__link link list" href="">Контакты</a>
                </li>
           </ul> 
         </nav>
-        <ul class="feedback-icon list">
-            <li class="suka">
-                <a class="feedback link list" 
+        <ul class="feedback list">
+            <li >
+                <a class="feedback__link feedback__link_position link list" 
                 href="mailto:info@devstudio.com"> 
                 <svg height="12"; width="16" class="icon">
                     <use 
@@ -42,7 +42,7 @@
                 info@devstudio.com</a>
             </li>
             <li class="feedback-icon">
-                <a class="feedback tel link list" href="tel:+380961111111">
+                <a class="feedback__link feedback__link_position tel link list" href="tel:+380961111111">
                     <svg height="16"; width="10" class="icon">
                         <use 
                              href="./images/sprite.svg#icon-smartphone">
@@ -211,20 +211,21 @@
         </section>
       </main>
       <!--footer-->
-      <footer class="basement">
+       <!--footer-->
+       <footer class="basement">
         <div class="container general-footer">
             <div class="left-footer">
-                <p><a class="logo-footer link" href="./index.html"><span class="web">Web</span>Studio</a> </p> 
+                <p><a class="logo link" href="./index.html"><span class="logo__web">Web</span>Studio</a> </p> 
                 <address>
                     <ul class="list">
                         <li class="contacts">
                             <a class="location link" href="https://goo.gl/maps/mXq6EUDNHia5LTcw9" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
                         </li>
                        <li class="contacts">
-                            <a class="feedback-footer link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            <a class="feedback__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                         </li>
                        <li class="contacts">
-                             <a class="feedback-footer link" href="tel:+380961111111">+38 096 111 11 11</a>
+                             <a class="feedback__link link" href="tel:+380961111111">+38 096 111 11 11</a>
                         </li>
                     </ul>                  
                 </address>     
@@ -232,8 +233,8 @@
             <div class="right-footer">
                 <h3 class="join">Присоединяйтесь</h3>
                 <ul class="list-links-join list">
-                    <li class="social-list-join">
-                        <a href="" class="social-links-join">
+                    <li class="social-item">
+                        <a href="" class="social-links">
                             <svg class="social-icon">
                              <use
                                 href="./images/sprite.svg#icon-instagram">
@@ -242,8 +243,8 @@
                         </a>    
                     </li>
                         
-                    <li class="social-list-join">
-                        <a href="" class="social-links-join">
+                    <li class="social-item">
+                        <a href="" class="social-links">
                              <svg class="social-icon">
                                  <use
                                      href="./images/sprite.svg#icon-twitter">
@@ -252,8 +253,8 @@
                         </a>
                     </li>
                             
-                    <li class="social-list-join">
-                        <a href="" class="social-links-join">
+                    <li class="social-item">
+                        <a href="" class="social-links">
                             <svg class="social-icon">
                                 <use
                                     href="./images/sprite.svg#icon-facebook">
@@ -262,8 +263,8 @@
                         </a>
                     </li>
                    
-                    <li class="social-list-join">
-                        <a href="" class="social-links-join">
+                    <li class="social-item">
+                        <a href="" class="social-links">
                             <svg class="social-icon">
                                 <use
                                     href="./images/sprite.svg#icon-linkedin">
@@ -273,11 +274,11 @@
                     </li>
                 </ul>
             </div>
-            
-            <form action="#" class="footer-form">
+            <div class="footer-subscribe">
                 <p class="join">Подпишитесь на рассылку</p>
+            <form action="#" class="footer-form">
                 <input type="email" name="mailing" class="footer-input" placeholder="E-mail" required>
-                <button class="btn-hero" type="submit">Подписаться
+                <button class="btn-modal" type="submit">Подписаться
                     <svg class="icon-form-footer" width="24" height="24">
                         <use
                             href="./images/sprite.svg#icon-telegram">
@@ -285,6 +286,10 @@
                     </svg>
                 </button>
             </form>
+            </div>
+            
+        </div>
+    </footer>
         </div>
     </footer>
 </body>

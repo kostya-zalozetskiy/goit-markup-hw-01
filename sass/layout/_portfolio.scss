@@ -1,0 +1,141 @@
+.btn-portfolio{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto; 
+    justify-content: center;  
+    align-items: center;
+   
+    margin-bottom: 50px;
+    }
+
+.btn-portfolio-list{
+    display: flex;
+
+    &:not(:last-child){
+        margin-right: 8px;} 
+}
+
+/*filter-btn*/
+.filter-btn{
+    flex-wrap: wrap;
+    padding-top: 4px;
+    padding-right: 22px;
+    padding-bottom: 4px;
+    padding-left: 22px;
+    border-radius: 4px;
+    background: #F5F4FA;
+    border-color: #F5F4FA;
+    border-style: solid;
+    
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-style: medium;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--first-color);
+    transition: color var(--time) var(--cubic), background-color var(--time) var(--cubic), border-color var(--time) var(--cubic), box-shadow var(--time) var(--cubic);
+
+    &:hover,
+    &:focus{
+    color: #FFFFFF;
+    background-color: #2196F3;
+    border-radius: 4px;
+    border-color: #2196F3;
+    
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);}
+}
+
+
+
+.example{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+    
+    }
+.list-works{
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 96px) / 3);
+    transition: background-color var(--time) var(--cubic), box-shadow var(--time) var(--cubic);
+
+    &:hover,
+    &:focus{
+    background: #FFFFFF;
+    border: 0px solid #EEEEEE;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+}
+
+
+.info{
+    padding: 20px  24px;
+}
+.list-works > .bord{
+    border-top-width: 0;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-style: solid;
+    border-color: #EEEEEE;
+}
+
+
+/*project-names*/
+.project-names{
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--first-color   )
+}
+/*kind-project*/
+.kind-project{
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--second-color);
+    
+}
+
+.link-example{
+    display: block;
+}
+.layer{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+
+.overlay{
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+   
+    padding: 63px 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+    color: #FFFFFF;
+    
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+   
+    overflow: auto;
+    transform: translateY(101%);
+    transition: transform  var(--time) var(--cubic);
+
+    .link-example:hover &,
+    .link-example:focus &{
+    transform: translateY(0%);}
+}

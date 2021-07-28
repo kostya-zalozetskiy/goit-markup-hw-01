@@ -1,0 +1,36 @@
+.modal{
+    position: absolute;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    height: 581px;
+    width: 528px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    padding: 40px 40px;
+    transform: translate(-50%, -50%);
+    } 
+
+.close-btn{
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+     height: 30px;
+     width: 30px;
+     top: 8px;
+     right: 8px;
+     cursor: pointer;
+        
+     background-color: transparent;
+     border: 1px solid rgba(0, 0, 0, 0.1);
+     box-sizing: border-box;
+      padding: 0;
+      transition: fill var(--time) var(--cubic);
+
+      &:focus,
+      &:hover{
+          fill: var(--accent); }
+    }
+    
