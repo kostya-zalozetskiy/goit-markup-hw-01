@@ -251,7 +251,6 @@ img {
   background-color: #FFFFFF;
 }
 
-
 @media screen and (min-width: 768px) {
   .change-img {
     display: flex;
@@ -272,11 +271,6 @@ img {
     flex-basis: calc((100% - 120px) / 4);
     margin-left: 30px;
   }
-
-.enumeration {
-  flex-basis: calc((100% - 60px) / 2);
-  margin-left: 30px;
-
 }
 
 .backdrop {
@@ -1255,6 +1249,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-subscribe {
     margin-left: 93px;
+    padding-top: 0px;
   }
   .footer-form {
     display: inline-flex;
