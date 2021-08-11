@@ -1,0 +1,46 @@
+
+
+// 
+
+// .mobile-social-networks {
+//   display: flex;
+//   padding-bottom: 48px;
+
+//   &__item {
+//     padding-right: 10px;
+
+//     &:not(:last-child) {
+//       margin-right: 10px;
+//       border-right: 1px solid rgba(33, 33, 33, 0.2);
+//     }
+//   }
+
+//   &__link {
+//     @include font(18px, 500);
+//     line-height: 1.22;
+//     color: var(--accent-color);
+//   }
+// }
+
+// .mobile-contacts__icon--mail,
+// .mobile-contacts__icon--phone {
+//   display: none;
+// }
+
+// @media screen and (min-width: 320px) and (max-width: 479px) {
+//   .mobile-menu-container {
+//     padding-left: 30px;
+
+//     &__close-button {
+//       top: 15px;
+//       right: 20px;
+//     }
+//   }
+// }
+
+// @media screen and (min-width: 768px) {
+//   .mobile-menu,
+//   .burger-button {
+//     display: none;
+//   }
+// }

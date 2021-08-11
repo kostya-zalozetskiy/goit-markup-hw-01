@@ -1,0 +1,23 @@
+body {
+    font-family: var( --main-font);
+    color: var(--second-color);
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+ margin-top: 0;
+ margin-bottom: 0;
+}
+ol,ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+img{
+    display: block;
+}
+.link{
+    text-decoration: none;
+}
+.list{ list-style: none;
+}
