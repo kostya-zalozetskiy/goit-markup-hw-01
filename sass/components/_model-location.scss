@@ -20,11 +20,12 @@
 }
 
 
-// //////////////////////////////////for desktop
+////////////////////////////for desktop/////////////////////
 @media screen and (min-width:1200px){
 
 .enumeration{
-    flex-basis: calc((100% - 120px) / 4) ;
+    flex-basis: calc((100% - 120px) / 4);
+    
      margin-left: 30px;
      
 }
