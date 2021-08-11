@@ -1,22 +1,35 @@
-.btn-portfolio{
-    display: flex;
-    margin-left: auto;
-    margin-right: auto; 
-    justify-content: center;  
-    align-items: center;
-   
-    margin-bottom: 50px;
+// ///////////////////////////////////for mobile
+
+    .btn-portfolio{
+        display: flex;
+        flex-wrap: wrap;  
+        align-items: center;
+       
+        margin-bottom: 40px;
+        }
+ @media screen  and (max-width:767px){    
+    .btn-portfolio-list{
+        display: flex;
+    
+        &:not(:last-child){
+            margin-right: 8px;} 
+        
+        &:nth-child(2n + 3){
+            margin-right: 0px;
+        }
+        &:nth-child(-n + 3){
+            margin-bottom: 15px;
+        }
     }
-
-.btn-portfolio-list{
-    display: flex;
-
-    &:not(:last-child){
-        margin-right: 8px;} 
+    
+    
 }
+
+
 
 /*filter-btn*/
 .filter-btn{
+    
     flex-wrap: wrap;
     padding-top: 4px;
     padding-right: 22px;
@@ -48,18 +61,17 @@
 }
 
 
-
+.img-portfolio{
+    width: 100%;
+    height: auto;
+}
 .example{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
-    
+    margin-right: auto;
+    margin-left: auto;
+      
     }
 .list-works{
-    margin-left: 30px;
-    margin-top: 30px;
-    flex-basis: calc((100% - 96px) / 3);
+
     transition: background-color var(--time) var(--cubic), box-shadow var(--time) var(--cubic);
 
     &:hover,
@@ -122,7 +134,10 @@
     width: 100%;
     
    
-    padding: 63px 24px;
+    padding-top: 77px;
+    padding-right: 24px;
+    padding-bottom: 77px;
+    padding-left: 24px;
     background-color: rgba(33, 150, 243, 0.9);
     color: #FFFFFF;
     
@@ -138,4 +153,85 @@
     .link-example:hover &,
     .link-example:focus &{
     transform: translateY(0%);}
+}
+
+
+@media screen and (min-width:768px) and (max-width:1199px){
+    
+    .example{
+        display: flex;
+       flex-wrap: wrap;
+       margin-left: -30px;
+   }
+   .overlay{
+        padding-top: 49px;
+        padding-bottom: 49px;
+    }
+    .list-works{
+        flex-basis: calc((100% - 64px) / 2);
+        margin-left: 30px;
+    }
+    .btn-portfolio-list{
+        &:not(:last-child){
+            margin-right: 8px;} 
+                }
+    .btn-portfolio{
+        justify-content: center;
+        margin-bottom: 14px;
+    }
+}
+
+    
+
+
+@media screen and (min-width:1200px) {
+.btn-portfolio{
+    display: flex;
+      margin-bottom: 50px;
+      justify-content: center;
+    }
+
+.btn-portfolio-list{
+    display: flex;
+
+    &:not(:last-child){
+        margin-right: 8px;} 
+}
+
+.example{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    
+    
+    }
+.list-works{
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 96px) / 3);
+   }
+
+
+
+.info{
+    padding: 20px  24px;
+}
+
+
+.link-example{
+    display: block;
+}
+.layer{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+
+.overlay{
+  
+    padding: 63px 24px;
+
+}
 }

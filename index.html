@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <!--header-->
+    <!-- header-->
     <header class="header">
         <div class="container header-container">
         <nav class="navigation">
@@ -30,8 +30,12 @@
                </li>
           </ul> 
         </nav>
+       
+  
+      
+        
         <ul class="feedback list">
-            <li >
+            <li class="feedback-icon" >
                 <a class="feedback__link feedback__link_position link list" 
                 href="mailto:info@devstudio.com"> 
                 <svg height="12"; width="16" class="icon">
@@ -50,18 +54,59 @@
                     </svg>
                 +38 096 111 11 11</a>
             </li>
-            
+        
         
         </ul>
+        <button  class="burger-menu" type="button"data-menu-open>
+            <svg  class="icon-burger">
+                <use
+                    href="./images/sprite.svg#icon-mobile">
+                </use>
+            </svg> 
+        </button> 
+        <div class="mobile-menu" data-menu>
+       
+            <div class="container mobile-menu-container">
+                <button class="mobile-close-button mobile-menu-container__close-button" data-menu-close>
+                    <svg class="mobile-close-button__icon">
+                      <use href="./images/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-nav list">
+                    <li class="mobile-nav__item"><a href="./index.html" class="mobile-nav__link link">Студия</a></li>
+                    <li class="mobile-nav__item"><a href="./portfolio.html" class="mobile-nav__link link">Портфолио</a></li>
+                    <li class="mobile-nav__item"><a href="#" class="mobile-nav__link link">Контакты</a></li>
+                  </ul>
+                  <ul class="mobile-contacts list">
+                    <li class="mobile-contacts__point">
+                      <a href="mailto:info@devstudio.com" class="mobile-contacts__item link">
+                        info@devstudio.com</a
+                      >
+                    </li>
+                    <li class="mobile-contacts__point">
+                      <a href="tel:+380961111111" class="mobile-contacts__item--bigger link">
+                         +38 096 111 11 11</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="mobile-social-networks list">
+                    <li class="mobile-social-networks__item"><a href="#" class="mobile-social-networks__link link">Instagram</a></li>
+                    <li class="mobile-social-networks__item"><a href="#" class="mobile-social-networks__link link">Twitter</a></li>
+                    <li class="mobile-social-networks__item"><a href="#" class="mobile-social-networks__link link">Facebook</a></li>
+                    <li class="mobile-social-networks__item"><a href="#" class="mobile-social-networks__link link">LinkedIn</a></li>
+                  </ul>
+            </div>
         
+    </div>
+</div> 
         </div>
         </header>
         <!-- HERO-->
-        <section class="hero">
+        <section class= "hero">
             <h1 class="main-head">Эффективные решения для вашего бизнеса</h1>
             <button data-modal-open class="btn-modal" type="button">Заказать услугу</button>
         </section>
-        <!--advantages-->
+        <!-- advantages -->
         <section class="size" >
             <div class="container">
             <h2 hidden>Наши преимущества</h2>
@@ -119,18 +164,43 @@
                 <h2 class="head-section">Чем мы занимаемся</h2>
                 <ul class="list change-img">
                 <li class="works">
-                        <img src="./images/work/sitelayout-1.jpg" alt="Верстка сайта" width="370" height="294">
-                        <p class="kind-work">Десктопные приложения</p>               
+                    <picture>
+                        <source
+                            media="" 
+                            srcset="./images/work/work-sitelayout-1.webp 1x, ./images/work/work-sitelayout-1@2x.webp 2x" type="image/webp">
+                        <source
+                            media="" 
+                            srcset="./images/work/work-sitelayout-1.jpg 1x, ./images/work/work-sitelayout-1@2x.jpg 2x">
+                        <img src="#" alt="Верстка сайта" width="370" height="294">
+                        <p class="kind-work">Десктопные приложения</p>  
+                    </picture>
+                                     
                 </li>
                
                 <li class="works">
-                    <img src="./images/work/sitelayout-2.jpg" alt="Дизайн мобильного ПО" width="370" height="294">
-                    <p class="kind-work">Мобильные приложения</p>
+                    <picture>
+                        <source
+                            media="" 
+                            srcset="./images/work/work-sitelayout-2.webp 1x, ./images/work/work-sitelayout-2@2x.webp 2x" type="image/webp">                            
+                        <source
+                            media="" 
+                            srcset="./images/work/work-sitelayout-2.jpg 1x, ./images/work/work-sitelayout-2@2x.jpg 2x">
+                        <img src="#" alt="Верстка сайта" width="370" height="294">
+                        <p class="kind-work">Мобильные приложения</p>
+                </picture>
                 </li>
                 
                 <li class="works">
-                    <img src="./images/work/sitelayout-3.jpg" alt="Выбор цвета страницы на планшете" width="370" height="294">
-                    <p class="kind-work">Дизайнерские решения</p>
+                    <picture>
+                        <source
+                            media="" 
+                            srcset="./images/work/work-sitelayout-3.webp 1x, ./images/work/work-sitelayout-3@2x.webp 2x" type="image/webp">                            
+                        <source
+                            media="" 
+                            srcset="./images/work/work-sitelayout-3.jpg 1x, ./images/work/work-sitelayout-3@2x.jpg 2x">
+                        <img src="#" alt="Верстка сайта" width="370" height="294">
+                        <p class="kind-work">Дизайнерские решения</p>
+                </picture>
                 </li>
                 </ul>
             </div>  
@@ -141,7 +211,17 @@
                 <h2 class="head-section">Наша команда</h2>
                 <ul class="list change-img">
                     <li class="enumeration list-team">
-                        <img src="./images/team/teammate-1.jpg" alt="Фотография Игоря Демьяненко" width="270" height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/team/teammate-desktop-1.webp, ./images/team/teammate-desktop-1@2x.webp" type="image/webp">
+                            <source media="(min-width: 1200px)" srcset="./images/team/teammate-desktop-1.jpg, ./images/team/teammate-desktop-1@2x.jpg">
+
+                            <source media="(min-width: 768px)" srcset="./images/team/teammate-tablet-1.webp 1x, ./images/team/teammate-tablet-1@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 768px)" srcset="./images/team/teammate-tablet-1.jpg, ./images/team/teammate-tablet-1@2x.jpg">
+
+                            <source media="(max-width: 767px)" srcset="./images/team/teammate-mobile-1.webp 1x, ./images/team/teammate-mobile-1@2x.webp 2x" type="image/webp">
+                            <source media="(max-width: 767px)" srcset="./images/team/teammate-mobile-1.jpg, ./images/team/teammate-mobile-1@2x.jpg">
+                        <img class="team-img" src="#" alt="Фотография Игоря Демьяненко" >
+                        </picture>
                         <div class="team-info">
                             <p class="names-teams">Игорь Демьяненко</p>
                             <p class="position" lang="en"> Product Designer</p>
@@ -188,7 +268,17 @@
                         </ul>
                     </li>
                     <li class="enumeration list-team">
-                        <img src="./images/team/teammate-2.jpg" alt="Фотография Ольги Репиной" width="270" height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/team/teammate-desktop-2.webp, ./images/team/teammate-desktop-2@2x.webp" type="image/webp">
+                            <source media="(min-width: 1200px)" srcset="./images/team/teammate-desktop-1.jpg, ./images/team/teammate-desktop-1@2x.jpg">
+
+                            <source media="(min-width: 768px)" srcset="./images/team/teammate-tablet-2.webp 1x, ./images/team/teammate-tablet-2@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 768px)" srcset="./images/team/teammate-tablet-2.jpg, ./images/team/teammate-tablet-2@2x.jpg">
+
+                            <source media="(max-width: 767px)" srcset="./images/team/teammate-mobile-2.webp 1x, ./images/team/teammate-mobile-2@2x.webp 2x" type="image/webp">
+                            <source media="(max-width: 767px)" srcset="./images/team/teammate-mobile-2.jpg, ./images/team/teammate-mobile-2@2x.jpg">
+                        <img class="team-img" src="#" alt="Фотография Ольги Репиной" >
+                        </picture>
                         <div class="team-info">
                             <p class="names-teams">Ольга Репина</p>
                             <p class="position"lang="en">Frontend Developer</p>
@@ -235,7 +325,17 @@
                         </ul>
                     </li>
                     <li class="enumeration list-team">
-                        <img src="./images/team/teammate-3.jpg" alt="Фотография Николая Тарасова" width="270" height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/team/teammate-desktop-3.webp, ./images/team/teammate-desktop-3@2x.webp" type="image/webp">
+                            <source media="(min-width: 1200px)" srcset="./images/team/teammate-desktop-3.jpg, ./images/team/teammate-desktop-3@2x.jpg">
+
+                            <source media="(min-width: 768px)" srcset="./images/team/teammate-tablet-3.webp 1x, ./images/team/teammate-tablet-3@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 768px)" srcset="./images/team/teammate-tablet-3.jpg, ./images/team/teammate-tablet-3@2x.jpg">
+
+                            <source media="(max-width: 767px)" srcset="./images/team/teammate-mobile-3.webp 1x, ./images/team/teammate-mobile-3@2x.webp 2x" type="image/webp">
+                            <source media="(max-width: 767px)" srcset="./images/team/teammate-mobile-3.jpg, ./images/team/teammate-mobile-3@2x.jpg">
+                            <img class="team-img" src="#" alt="Фотография Николая Тарасова" >
+                        </picture>
                         <div class="team-info">
                             <p class="names-teams">Николай Тарасов</p>
                             <p class="position" lang="en">Marketing</p>
@@ -282,7 +382,18 @@
                         </ul>
                     </li>
                     <li class="enumeration list-team">
-                        <img src="./images/team/teammate-4.jpg" alt="Фотография Михаила Ермакова" width="270" height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/team/teammate-desktop-4.webp, ./images/team/teammate-desktop-4@2x.webp" type="image/webp">
+                            <source media="(min-width: 1200px)" srcset="./images/team/teammate-desktop-1.jpg, ./images/team/teammate-desktop-4@2x.jpg">
+
+                            <source media="(min-width: 768px)" srcset="./images/team/teammate-tablet-4.webp 1x, ./images/team/teammate-tablet-4@2x.webp 2x" type="image/webp">
+                            <source media="(min-width: 768px)" srcset="./images/team/teammate-tablet-4.jpg, ./images/team/teammate-tablet-4@2x.jpg">
+
+                            <source media="(max-width: 767px)" srcset="./images/team/teammate-mobile-4.webp 1x, ./images/team/teammate-mobile-4@2x.webp 2x" type="image/webp">
+                            <source media="(max-width: 767px)" srcset="./images/team/teammate-mobile-4.jpg, ./images/team/teammate-mobile-4@2x.jpg">
+                            <img class="team-img" src="#" alt="Фотография Михаила Ермакова" >
+                            </picture>
+                        
                         <div class="team-info">
                             <p class="names-teams">Михаил Ермаков</p>
                             <p class="position" lang="en">UI Designer</p>
@@ -405,7 +516,7 @@
             <div class="left-footer">
                 <p><a class="logo link" href="./index.html"><span class="logo__web">Web</span>Studio</a> </p> 
                 <address>
-                    <ul class="list">
+                    <ul class="list list-contact">
                         <li class="contacts">
                             <a class="location link" href="https://goo.gl/maps/mXq6EUDNHia5LTcw9" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
                         </li>
@@ -418,7 +529,7 @@
                     </ul>                  
                 </address>     
             </div>
-            <div class="right-footer">
+            <div class="right-footer size-mobile">
                 <h3 class="join">Присоединяйтесь</h3>
                 <ul class="list-links-join list">
                     <li class="social-item">
@@ -542,6 +653,7 @@
           
         </div>
     </div>
+    <script src="./js/mobile.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>

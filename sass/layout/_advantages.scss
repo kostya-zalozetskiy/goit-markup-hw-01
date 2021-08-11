@@ -1,19 +1,25 @@
-.change{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-   }
+// .change{
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin-left: -30px;
+//    }
 
-
+// /////////////////////////////// для телефона/////////////////////////////
+@media screen and (max-width: 767px){
+    .enumeration:not(:last-child){
+    margin-bottom: 30px;
+}
+}
 .block{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 120px;
-    max-width: 270px;
+    max-width: 450px;
     margin-bottom: 30px;
     border-radius: 4px;
     background-color:  #F5F4FA;
+    
 }
 .list-adv{
     margin-bottom: 10px;
@@ -21,6 +27,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--first-color);
@@ -36,4 +43,41 @@
     letter-spacing: 0.03em;
     color: var(--second-color);
 
+}
+
+// /////////////////////////////////////для планшета//////////////////////////
+@media screen and (min-width: 768px){
+    .change{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+       }
+    .block{
+        width: 354px;
+       
+    }
+    .enumeration{
+        margin-bottom: 30px;
+    }
+    .enumeration:nth-child( n + 3 ) {
+        
+        margin-bottom: 0px;
+        
+    }
+    .list-adv{
+        text-align: left;
+    }
+}
+    
+// /////////////////////////////////////для desktop//////////////////////////
+
+@media screen and (min-width: 1200px){
+    .block{
+        width: 270px;
+    }
+    .enumeration{
+        z-index: 100;
+        margin-bottom: 0;
+       
+    }
 }

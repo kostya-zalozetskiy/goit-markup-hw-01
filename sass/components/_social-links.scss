@@ -1,12 +1,32 @@
+.team-img{
+    
+    width: 100%;
+    height: auto;
+}
+
+
+
+    
+
 .social-list{
     display: flex;
-    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px; 
     margin-top: 16px;
-    justify-content: center; 
 }
+
+@media screen and (max-width:1199px){
+    .social-list{
+        padding-bottom: 23px;
+        
+    }
+}
+
 
 .social-item:not(:first-child){
     margin-left: 10px;
+    
 }
   
 .social-links{

@@ -1,8 +1,23 @@
 .container {
-    width: 1170px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
-    border: 1px;
-    border-color: #ECECEC;
+    margin: 0 auto;}
+    
+
+
+@media screen and (min-width:480px){  
+    .container {
+    width: 450px;
+    }
+}
+@media screen and (min-width: 768px){
+    .container{
+        width: 738px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
 }

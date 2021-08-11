@@ -3,8 +3,7 @@
     box-sizing: border-box;
     top: 50%;
     left: 50%;
-    height: 581px;
-    width: 528px;
+   
     border-radius: 4px;
     background-color: #FFFFFF;
     padding: 40px 40px;
@@ -33,4 +32,25 @@
       &:hover{
           fill: var(--accent); }
     }
+
+
+@media screen and (max-width:1199px) {
+    .modal{
+        height: 100vh;
+        max-height: 609px;
+        width: 100vw;
+        max-width: 450px;
+    }
+}
+
     
+
+
+@media screen and (min-width:1200px) {
+
+.modal{
+  
+    height: 581px;
+    width: 528px;
+}
+}
