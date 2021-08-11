@@ -1,0 +1,120 @@
+// ////////////////////////////for mobile
+.basement{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contacts:not(:first-child){
+    margin-top: 10px;
+}
+.size-mobile{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/*location*/
+.location{
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    transition: color var(--time) var(--cubic);
+
+    &:hover
+    &:focus{ 
+   color: var(--accent);}
+}    
+.basement .feedback__link:hover,
+.basement .feedback__link:focus{
+    color: #FFFFFF;
+}
+
+.join{
+    text-align: center;
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.general-footer{
+
+    padding: 0 auto;
+}
+.left-footer{
+    text-align: center;
+}
+.right-footer{
+
+    text-align: center;
+}
+
+.list-links-join{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+@media screen and (min-width:768px) and (max-width:1199px){
+    .general-footer{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .left-footer{
+        display: inline-block;
+        padding-left:76px;
+        padding-right: 165px;
+        text-align: left; 
+     }
+     .right-footer{
+        display: inline-block;
+     }
+     .size-mobile{
+         padding-top: 5px;
+         padding-left: 0;
+         padding-right: 0;
+         padding-bottom: 0;
+     }
+}
+    
+
+
+@media screen and (min-width:1200px){
+    .size-mobile{
+        padding: 0;
+    }
+    .left-footer{
+        text-align: left;}
+
+.contacts{
+    display: flex;
+    margin-right: auto;
+    }
+
+.join{
+    text-align: left;}
+
+.general-footer{
+    display: flex;
+    align-items: baseline;
+}
+.right-footer{
+    text-align: none;
+    margin-left: 70px;
+    
+}
+
+.list-links-join{
+    display: flex;
+    margin-top: 20px;
+    
+}
+}
