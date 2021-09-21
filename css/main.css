@@ -201,6 +201,12 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .feedback-icon:first-child {
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .feedback__link {
     font-size: 14px;
@@ -275,6 +281,7 @@ img {
 
 .backdrop {
   position: fixed;
+  z-index: 1000;
   top: 0;
   left: 0;
   width: 100vw;
@@ -331,6 +338,7 @@ img {
     max-height: 609px;
     width: 100vw;
     max-width: 450px;
+    overflow-x: auto;
   }
 }
 
@@ -695,6 +703,7 @@ img {
   }
   .mobile-social-networks {
     display: flex;
+    flex-wrap: wrap;
     padding-bottom: 48px;
   }
   .mobile-social-networks__item {
@@ -727,8 +736,8 @@ img {
     display: block;
   }
   .header {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #ECECEC;
   }
   /*div.nav*/
@@ -1425,7 +1434,7 @@ img {
   }
   .btn-portfolio {
     justify-content: center;
-    margin-bottom: 14px;
+    margin-bottom: 35px;
   }
 }
 

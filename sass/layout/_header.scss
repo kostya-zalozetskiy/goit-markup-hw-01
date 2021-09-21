@@ -159,6 +159,7 @@ letter-spacing: 0.02em;
         }
         .mobile-social-networks {
               display: flex;
+              flex-wrap: wrap;
               padding-bottom: 48px;
         }
         .mobile-social-networks__item {
@@ -207,8 +208,8 @@ letter-spacing: 0.02em;
 
 .header{
     
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #ECECEC;
     
 }
