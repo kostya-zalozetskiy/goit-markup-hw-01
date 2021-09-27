@@ -24,14 +24,14 @@
     letter-spacing: 0.03em;
     color: #FFFFFF;
     transition: color var(--time) var(--cubic);
-
-    &:hover
-    &:focus{ 
-   color: var(--accent);}
 }    
 .basement .feedback__link:hover,
 .basement .feedback__link:focus{
-    color: #FFFFFF;
+    color: var(--accent);
+}
+.basement .location:hover,
+.basement .location:focus{
+    color: var(--accent);
 }
 
 .join{

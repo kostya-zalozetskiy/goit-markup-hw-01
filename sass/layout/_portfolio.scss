@@ -10,16 +10,17 @@
  @media screen  and (max-width:767px){    
     .btn-portfolio-list{
         display: flex;
+        margin-bottom: 15px;
     
         &:not(:last-child){
             margin-right: 8px;} 
         
-        &:nth-child(2n + 3){
-            margin-right: 0px;
-        }
-        &:nth-child(-n + 3){
-            margin-bottom: 15px;
-        }
+        // &:nth-child(2n + 3){
+        //     margin-right: 0px;
+        // }
+        // &:nth-child(-n + 3){
+        //     margin-bottom: 15px;
+        // }
     }
     
     
