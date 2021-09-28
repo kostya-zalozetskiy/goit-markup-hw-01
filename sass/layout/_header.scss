@@ -1,4 +1,6 @@
-
+.mobile-nav .mobile-nav__link.current{
+  color: var(--accent)
+}
   
   @media screen and (min-width: 320px) and (max-width: 479px) {
     .mobile-menu-container {
@@ -148,7 +150,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 34px;
 line-height: 40px;
-color: #757575;
+color: var(--accent);
 
 letter-spacing: 0.02em;
     }
@@ -269,6 +271,7 @@ letter-spacing: 0.02em;
 .menu .menu__link.current{
     color: var(--accent);
 }
+
 
 // .tel{
 //     margin-left: 50px;
